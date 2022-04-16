@@ -43,6 +43,7 @@ func routeRequest(m []Member) {
 
 func homePage(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprint(w, "Welcome to my homepage")
+	fmt.Fprint(w, "Hello my world")
 }
 
 func member(m []Member) func(w http.ResponseWriter, r *http.Request) {
